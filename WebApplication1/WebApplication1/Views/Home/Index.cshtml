@@ -1,0 +1,17 @@
+﻿@Model Persona
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.nombre)
+        @Html.TextBox("Name");
+        @Html.TextBox("Saludo");
+        <input type="submit" value="submit"/>
+    }
+</div>
+
+<h2>Index</h2>
+
